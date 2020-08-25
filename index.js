@@ -1,9 +1,12 @@
-const Pessoa = require("./modules/objects/Pessoa");
+// Aula 6
 
-const ana = new Pessoa(50, 1.55);
-console.log(ana.imc());
+const OperArit = require("./modules/objects/OperArit");
 
-const pedro = new Pessoa();
-pedro.peso = 80;
-pedro.altura = 1.78;
-console.log(pedro.imc());
+var calculator = new OperArit(5, 2);
+
+console.log("\nSoma: " + calculator.soma());
+console.log("\nSubstração: " + calculator.subtracao());
+console.log("\nMultiplicação: " + calculator.multiplicacao());
+console.log("\nDivisão: " + calculator.divisao());
+console.log("\nMódulo (resto da divisão inteira de a por b): " + calculator.mod());
+console.log("\nPotênciação: " + calculator.potencia());
