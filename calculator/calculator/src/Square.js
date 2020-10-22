@@ -8,7 +8,7 @@ import { Button } from 'primereact/button';
 
 function Square(props){
   return (
-    <Button label={props.value}/>
+    <Button label={props.value} onClick={props.onClick}/>
   );
 }
 
